@@ -5,6 +5,45 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ===========================
+      EmailJS Init + Contact Form
+  ============================ */
+  emailjs.init("Wsf0AyoOLChWU-XFi");
+
+  const contactForm = document.getElementById("contact-form");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const btn = contactForm.querySelector(".btn-send");
+      btn.innerText = "Sending...";
+      btn.disabled = true;
+
+      emailjs.sendForm(
+        "service_jgbcbff",
+        "template_i3h9snp",
+        this
+      ).then(
+        () => {
+          btn.innerText = "Message Sent ✅";
+          contactForm.reset();
+
+          setTimeout(() => {
+            btn.innerText = "Send Message";
+            btn.disabled = false;
+          }, 3000);
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          btn.innerText = "Failed ❌ Try Again";
+          btn.disabled = false;
+        }
+      );
+    });
+  }
+
+
+  /* ===========================
       Smooth Scroll (Navbar)
   ============================ */
   const navLinks = document.querySelectorAll(".ul-list li a");
