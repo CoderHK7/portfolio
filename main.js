@@ -5,7 +5,7 @@
 // ── EmailJS Init ──
 (function () {
   if (typeof emailjs !== 'undefined') {
-    emailjs.init('YOUR_EMAILJS_PUBLIC_KEY'); // ← Replace with your key
+    emailjs.init('3Bhm3CcTLTnpDt4FD'); // ← Replace with your key
   }
 })();
 
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_ej85l3k', 'template_miphhsh', this)
       .then(() => {
         showToast('Message sent successfully! I\'ll get back to you soon.', 'success');
         form.reset();
