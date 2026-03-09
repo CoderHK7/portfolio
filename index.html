@@ -20,9 +20,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Unbounded:wght@200..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap"
     rel="stylesheet" />
 
   <!-- FontAwesome -->
@@ -35,101 +34,97 @@
 
 <body>
 
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
   <!-- Loading Screen -->
   <div id="loading-screen">
     <div class="loading-content">
-      <i class="fa-solid fa-laptop-code fa-5x main-icon hidden"></i>
-      <h1 id="loading-text" class="hidden">MY PORTFOLIO</h1>
-
-      <div class="sub-icons">
-        <i class="fa-brands fa-github fa-2x hidden"></i>
-        <i class="fa-solid fa-code fa-2x hidden"></i>
-        <i class="fa-solid fa-user fa-2x hidden"></i>
+      <div class="loading-logo">
+        <span class="logo-bracket">{</span>
+        <span class="logo-letters">HK</span>
+        <span class="logo-bracket">}</span>
       </div>
-
-      <h2 id="designer-text" class="hidden">Portfolio of Harkishan Solanki</h2>
+      <div class="loading-bar-wrap">
+        <div class="loading-bar-fill"></div>
+      </div>
+      <p class="loading-tagline">Initializing portfolio...</p>
     </div>
   </div>
 
   <!-- Header -->
   <header class="header-list">
+    <div class="header-logo">
+      <span class="logo-bracket">{</span><span class="logo-name">HK</span><span class="logo-bracket">}</span>
+    </div>
     <nav class="div-list">
       <ul class="ul-list">
-
         <li class="active">
-          <i class="fa-regular fa-house"></i>
-          <a href="#home">Home</a>
+          <a href="#home"><i class="fa-regular fa-house"></i><span>Home</span></a>
         </li>
-
         <li>
-          <i class="fa-regular fa-address-card"></i>
-          <a href="#about">About</a>
+          <a href="#about"><i class="fa-regular fa-address-card"></i><span>About</span></a>
         </li>
-
         <li>
-          <i class="fa-regular fa-folder-open"></i>
-          <a href="#project">Projects</a>
+          <a href="#project"><i class="fa-regular fa-folder-open"></i><span>Projects</span></a>
         </li>
-
         <li>
-          <i class="fa-solid fa-code"></i>
-          <a href="#services">Services</a>
+          <a href="#services"><i class="fa-solid fa-code"></i><span>Services</span></a>
         </li>
-
         <li>
-          <i class="fa-regular fa-envelope"></i>
-          <a href="#contact">Contact</a>
+          <a href="#contact"><i class="fa-regular fa-envelope"></i><span>Contact</span></a>
         </li>
-
       </ul>
     </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
   </header>
 
   <!-- Home -->
   <section class="home" id="home">
 
-    <p class="home-p">
-      <span class="home-s">•</span> Available for opportunities
-    </p>
+    <!-- Background grid decoration -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <div class="home-availability">
+      <span class="availability-dot"></span> Available for opportunities
+    </div>
 
     <div class="home-container">
 
       <div class="home-section">
-
         <div class="info-home">
+
+          <div class="home-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>Full Stack Java Developer</span>
+          </div>
 
           <h1>Hi, I'm <span class="name-highlight">Harkishan</span></h1>
 
-          <h3>Full Stack Java Developer</h3>
+          <h3>Building the backbone<br>of modern applications.</h3>
 
           <div class="info-p">
-
             <p>I build scalable backend systems and modern full-stack applications.</p>
-
             <p>Specialized in Java, Spring Boot, Microservices and event-driven architectures.</p>
-
             <p>Focused on building reliable APIs, clean architecture and production-ready systems.</p>
-
           </div>
 
           <div class="info-p2">
-
             <p><i class="fa-solid fa-location-dot"></i>Bengaluru, Karnataka, India</p>
-
             <p><i class="fa-solid fa-briefcase"></i> Available Now</p>
-
           </div>
 
           <div class="btnn">
-
             <a href="#contact" class="btn-home1">
-              <i class="fa-solid fa-arrow-right"></i> Hire Me
+              Hire Me <i class="fa-solid fa-arrow-right"></i>
             </a>
-
             <a href="assets/Harkishan_resume (1).pdf" class="btn-home2" download>
               <i class="fa-solid fa-download"></i> Download CV
             </a>
-
           </div>
 
           <div class="hhr">
@@ -137,77 +132,76 @@
           </div>
 
           <div class="follow">
-
-            <p class="followw">Follow me:</p>
-
+            <p class="followw">Follow me</p>
             <ul>
-
               <li>
-                <a href="https://github.com/CoderHK7" target="_blank">
+                <a href="https://github.com/CoderHK7" target="_blank" aria-label="GitHub">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </li>
-
               <li>
-                <a href="https://www.linkedin.com/in/harkishan-s-206b48376/" target="_blank">
+                <a href="https://www.linkedin.com/in/harkishan-s-206b48376/" target="_blank" aria-label="LinkedIn">
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
               </li>
-
               <li>
-                <a href="https://leetcode.com/u/harkishan77/" target="_blank">
+                <a href="https://leetcode.com/u/harkishan77/" target="_blank" aria-label="LeetCode">
                   <i class="fa-solid fa-code"></i>
                 </a>
               </li>
-
             </ul>
-
           </div>
 
         </div>
-
       </div>
 
-      <img src="images/imgX.jpeg" alt="Harkishan Solanki - Full Stack Developer" />
+      <div class="home-image-wrap">
+        <div class="image-ring"></div>
+        <div class="image-frame">
+          <img src="images/imgX.jpeg" alt="Harkishan Solanki - Full Stack Developer" />
+        </div>
+        <div class="image-badge">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span>Full Stack Dev</span>
+        </div>
+      </div>
 
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
     </div>
 
   </section>
 
   <!-- About -->
-
   <section class="about" id="about">
 
-    <p class="section-tag">ABOUT ME</p>
-
-    <div class="title">
-
-      <h1>Building Scalable</h1>
-
-      <h1>Backend Systems</h1>
-
+    <div class="section-header">
+      <p class="section-tag">ABOUT ME</p>
+      <div class="title">
+        <h1>Building Scalable</h1>
+        <h1>Backend Systems</h1>
+      </div>
     </div>
 
-    <div class="hrrr">
-      <hr />
-    </div>
+    <div class="hrrr"><hr /></div>
 
     <div class="about-container">
 
       <div class="info-about">
 
         <div class="about-info">
-
           <p>
             I'm a Full Stack Java Developer with hands-on experience building scalable
             backend systems using Spring Boot, PostgreSQL and Kafka.
           </p>
-
           <p>
             I enjoy designing microservices, building secure REST APIs and developing
             full-stack applications using React and modern technologies.
           </p>
-
         </div>
 
         <h2>What Drives Me</h2>
@@ -215,184 +209,138 @@
         <div class="card">
 
           <div class="c1">
-
-            <h3><i class="fa-solid fa-code"></i> Skills</h3>
-
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Skills</h3>
             <p>Java, Spring Boot, React, PostgreSQL, Kafka, Docker, SQL, JavaScript</p>
-
           </div>
 
           <div class="c1">
-
-            <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-
+            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Education</h3>
             <p>Bachelor of Engineering – Information Technology</p>
-
-            <p>Gujarat Technological University (2021-2025)</p>
-
+            <p>Gujarat Technological University (2021–2025)</p>
           </div>
 
           <div class="c1">
-
-            <h3><i class="fa-solid fa-folder-open"></i> Projects</h3>
-
+            <div class="card-icon"><i class="fa-solid fa-folder-open"></i></div>
+            <h3>Projects</h3>
             <p>Built real-world backend systems with microservices and AI integration</p>
-
           </div>
 
         </div>
 
       </div>
 
-      <img src="images/img.jpg" alt="About Harkishan Solanki" />
+      <div class="about-image-wrap">
+        <img src="images/img.jpg" alt="About Harkishan Solanki" />
+        <div class="about-image-decor"></div>
+      </div>
 
     </div>
 
   </section>
 
   <!-- Projects -->
-
   <section class="project" id="project">
 
-    <p class="section-tag">PROJECTS</p>
-
-    <h1>Featured Work</h1>
+    <div class="section-header">
+      <p class="section-tag">PROJECTS</p>
+      <h1>Featured Work</h1>
+    </div>
 
     <hr />
 
     <div class="info-pro">
-
-      <p>A showcase of projects demonstrating expertise in backend systems,</p>
-
-      <p>microservices architecture, AI integration and full-stack development.</p>
-
+      <p>A showcase of projects demonstrating expertise in backend systems,
+      microservices architecture, AI integration and full-stack development.</p>
     </div>
 
     <div class="projects-container">
 
       <!-- Project 1 -->
-
       <div class="project-card">
-
-        <img src="https://i0.wp.com/bicon.li/wp-content/uploads/2025/04/MS-Bank-Use-Case-1.png?resize=825%2C550&ssl=1" alt="Banking Microservices Platform" />
-
-        <h3>Banking Microservices Platform</h3>
-
-        <p>
-          Event-driven banking system with Payment and Ledger services built using Spring Boot and Kafka.
-        </p>
-
-        <div class="skills">
-
-          <a href="#">Java</a>
-
-          <a href="#">Spring Boot</a>
-
-          <a href="#">Kafka</a>
-
-          <a href="#">PostgreSQL</a>
-
-          <a href="#">Docker</a>
-
+        <div class="project-img-wrap">
+          <img src="https://i0.wp.com/bicon.li/wp-content/uploads/2025/04/MS-Bank-Use-Case-1.png?resize=825%2C550&ssl=1" alt="Banking Microservices Platform" />
+          <div class="project-overlay">
+            <span>View Project</span>
+          </div>
         </div>
-
-        <div class="btns">
-
-          <a href="https://github.com/CoderHK7/banking-platform"
-            class="btn"
-            target="_blank">
-
-            <i class="fab fa-github"></i> GitHub
-
-          </a>
-
+        <div class="project-body">
+          <h3>Banking Microservices Platform</h3>
+          <p>
+            Event-driven banking system with Payment and Ledger services built using Spring Boot and Kafka.
+          </p>
+          <div class="skills">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>Kafka</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/CoderHK7/banking-platform" class="btn" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
-
       </div>
 
       <!-- Project 2 -->
-
       <div class="project-card">
-
-        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/b0a298228251353.Y3JvcCwxMTgzLDkyNiwxNTUsMA.png" alt="Movie Review Platform" />
-
-        <h3>Movie Review Platform</h3>
-
-        <p>
-          Full-stack movie review platform with JWT authentication and role-based access control.
-        </p>
-
-        <div class="skills">
-
-          <a href="#">Spring Boot</a>
-
-          <a href="#">React</a>
-
-          <a href="#">PostgreSQL</a>
-
-          <a href="#">JWT</a>
-
+        <div class="project-img-wrap">
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/b0a298228251353.Y3JvcCwxMTgzLDkyNiwxNTUsMA.png" alt="Movie Review Platform" />
+          <div class="project-overlay">
+            <span>View Project</span>
+          </div>
         </div>
-
-        <div class="btns">
-
-          <a href="https://github.com/CoderHK7/movies-api.git"
-            class="btn"
-            target="_blank">
-
-            <i class="fab fa-github"></i> GitHub
-
-          </a>
-
-          <a href="https://movies-ui-4i2q.onrender.com"
-            class="btn"
-            target="_blank">
-
-            <i class="fas fa-external-link-alt"></i> Live Demo
-
-          </a>
-
+        <div class="project-body">
+          <h3>Movie Review Platform</h3>
+          <p>
+            Full-stack movie review platform with JWT authentication and role-based access control.
+          </p>
+          <div class="skills">
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>PostgreSQL</span>
+            <span>JWT</span>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/CoderHK7/movies-api.git" class="btn" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://movies-ui-4i2q.onrender.com" class="btn btn-live" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
         </div>
-
       </div>
 
       <!-- Project 3 -->
-
       <div class="project-card">
-
-        <img src="https://miro.medium.com/v2/resize:fit:1400/1*zHiSd1CMI-SsGpyUC64S0w.png" alt="AI Log Monitoring System" />
-
-        <h3>AI Log Monitoring System</h3>
-
-        <p>
-          Backend system that analyzes application logs and generates AI-powered summaries
-          using OpenAI API.
-        </p>
-
-        <div class="skills">
-
-          <a href="#">Java</a>
-
-          <a href="#">Spring Boot</a>
-
-          <a href="#">OpenAI API</a>
-
-          <a href="#">PostgreSQL</a>
-
+        <div class="project-img-wrap">
+          <img src="https://miro.medium.com/v2/resize:fit:1400/1*zHiSd1CMI-SsGpyUC64S0w.png" alt="AI Log Monitoring System" />
+          <div class="project-overlay">
+            <span>View Project</span>
+          </div>
         </div>
-
-        <div class="btns">
-
-          <a href="https://github.com/CoderHK7/log-monitoring-service"
-            class="btn"
-            target="_blank">
-
-            <i class="fab fa-github"></i> GitHub
-
-          </a>
-
+        <div class="project-body">
+          <h3>AI Log Monitoring System</h3>
+          <p>
+            Backend system that analyzes application logs and generates AI-powered summaries
+            using OpenAI API.
+          </p>
+          <div class="skills">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>OpenAI API</span>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="btns">
+            <a href="https://github.com/CoderHK7/log-monitoring-service" class="btn" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
-
       </div>
 
     </div>
@@ -400,45 +348,42 @@
   </section>
 
   <!-- Services -->
-
   <section class="services" id="services">
 
-    <p class="section-tag">SERVICES</p>
-
-    <h1>What I Can Do For You</h1>
+    <div class="section-header">
+      <p class="section-tag">SERVICES</p>
+      <h1>What I Can Do For You</h1>
+    </div>
 
     <hr />
 
     <div class="services-container">
 
       <div class="service-card">
-
-        <img src="images/web.svg" alt="Frontend Development" />
-
+        <div class="service-icon-wrap">
+          <img src="images/web.svg" alt="Frontend Development" />
+        </div>
         <h3>Frontend Development</h3>
-
         <p>Modern responsive interfaces using React and clean UI design.</p>
-
+        <div class="service-number">01</div>
       </div>
 
       <div class="service-card">
-
-        <img src="images/app.svg" alt="Backend Development" />
-
+        <div class="service-icon-wrap">
+          <img src="images/app.svg" alt="Backend Development" />
+        </div>
         <h3>Backend Development</h3>
-
         <p>Robust REST APIs and microservices using Spring Boot and PostgreSQL.</p>
-
+        <div class="service-number">02</div>
       </div>
 
       <div class="service-card">
-
-        <img src="images/dm.svg" alt="System Architecture" />
-
+        <div class="service-icon-wrap">
+          <img src="images/dm.svg" alt="System Architecture" />
+        </div>
         <h3>System Architecture</h3>
-
         <p>Designing scalable backend systems with event-driven architecture and Kafka.</p>
-
+        <div class="service-number">03</div>
       </div>
 
     </div>
@@ -446,67 +391,47 @@
   </section>
 
   <!-- Contact -->
-
   <section class="contact" id="contact">
 
-    <p class="section-tag">CONTACT</p>
-
-    <h1>Let’s Work Together</h1>
+    <div class="section-header">
+      <p class="section-tag">CONTACT</p>
+      <h1>Let's Work Together</h1>
+    </div>
 
     <div class="contact-content">
 
       <div class="contact-info slide-in-left">
 
-        <p>
+        <p class="contact-intro">
           I'm open to collaborations, freelance work and backend developer opportunities.
         </p>
 
         <div class="contact-details">
 
           <div class="contact-item">
-
-            <i class="fa-solid fa-envelope"></i>
-
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
             <span>harkishansolanki5@outlook.com</span>
-
           </div>
 
           <div class="contact-item">
-
-            <i class="fa-solid fa-phone"></i>
-
+            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
             <span>+91 9601007930</span>
-
           </div>
 
           <div class="contact-item">
-
-            <i class="fa-solid fa-location-dot"></i>
-
+            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
             <span>Bengaluru, Karnataka</span>
-
           </div>
 
         </div>
 
         <div class="social-links">
-
-          <a href="https://github.com/CoderHK7"
-            class="social-link"
-            target="_blank">
-
+          <a href="https://github.com/CoderHK7" class="social-link" target="_blank" aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
-
           </a>
-
-          <a href="https://www.linkedin.com/in/harkishan-s-206b48376/"
-            class="social-link"
-            target="_blank">
-
+          <a href="https://www.linkedin.com/in/harkishan-s-206b48376/" class="social-link" target="_blank" aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin"></i>
-
           </a>
-
         </div>
 
       </div>
@@ -516,18 +441,24 @@
         <form id="contact-form">
 
           <div class="form-group">
-            <input type="text" placeholder="Your Name" required name="from_name" />
+            <label>Your Name</label>
+            <input type="text" placeholder="John Doe" required name="from_name" />
           </div>
 
           <div class="form-group">
-            <input type="email" placeholder="Your Email" required name="from_email" />
+            <label>Your Email</label>
+            <input type="email" placeholder="john@example.com" required name="from_email" />
           </div>
 
           <div class="form-group">
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
           </div>
 
-          <button type="submit" class="btn-send">Send Message</button>
+          <button type="submit" class="btn-send">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
 
         </form>
 
@@ -538,51 +469,38 @@
   </section>
 
   <!-- Footer -->
-
   <footer class="footer">
-
     <div class="footer-container">
 
-      <h2 class="footer-logo">Harkishan Solanki</h2>
+      <h2 class="footer-logo">
+        <span class="logo-bracket">{</span> Harkishan Solanki <span class="logo-bracket">}</span>
+      </h2>
 
       <ul class="footer-links">
-
         <li><a href="#home">Home</a></li>
-
         <li><a href="#about">About</a></li>
-
         <li><a href="#project">Projects</a></li>
-
         <li><a href="#services">Services</a></li>
-
         <li><a href="#contact">Contact</a></li>
-
       </ul>
 
       <div class="footer-social">
-
-        <a href="https://github.com/CoderHK7" target="_blank">
+        <a href="https://github.com/CoderHK7" target="_blank" aria-label="GitHub">
           <i class="fa-brands fa-github"></i>
         </a>
-
-        <a href="https://www.linkedin.com/in/harkishan-s-206b48376/" target="_blank">
+        <a href="https://www.linkedin.com/in/harkishan-s-206b48376/" target="_blank" aria-label="LinkedIn">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-
       </div>
 
-      <p class="footer-copy">© 2026 Harkishan Solanki. All Rights Reserved.</p>
+      <p class="footer-copy">© 2026 Harkishan Solanki. Crafted with precision.</p>
 
     </div>
-
   </footer>
 
   <!-- EmailJS -->
-
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
   <script src="main.js"></script>
 
 </body>
-
 </html>
